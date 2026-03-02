@@ -1,14 +1,12 @@
-import React from 'react'
-import Navigation from "@/components/ui/NavigationHeader";
-import Grid from '@/components/ui/GridUploads';
+// import Navigation from "@/components/Navigation";
 
-export default function UploadPage() {
-  // get the results from wherever they are stored and display them
+// export default function UploadPage() {
+//   // get the results from wherever they are stored and display them
 
-  return (
-    <div>
-        <Navigation />
-        <Grid />
-    </div>
-  )
-}
+//   return (
+//     <div>
+//         <Navigation />
+//         <Grid />
+//     </div>
+//   )
+// }
