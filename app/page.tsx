@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <div className="main-content">
         <Hero />
-        <StatsBar />
+        {/* <StatsBar /> */}
         <ResearchSection />
         <Publications />
         <ToolsAndNews />

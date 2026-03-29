@@ -42,10 +42,6 @@ export default function Contact() {
                   2900 Bedford Ave, Brooklyn, NY 11210
                 </span>
               </div>
-              <div className="flex gap-4">
-                <span className="font-heading text-[11px] font-bold uppercase tracking-[0.07em] text-deep-blue min-w-[90px] pt-0.5 shrink-0">Office Hours</span>
-                <span className="font-body text-[15px] text-charcoal leading-[1.55]">By appointment</span>
-              </div>
             </div>
 
             {/* DNA figure placeholder */}

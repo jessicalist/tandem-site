@@ -1,8 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-//import { useState } from 'react'
-
 
 const NAV_ITEMS = [
   { label: 'Research', href: '#research' },
@@ -10,6 +8,7 @@ const NAV_ITEMS = [
   { label: 'Tools & Data', href: '#tools' },
   { label: 'News', href: '#news' },
   { label: 'Contact', href: '#contact' },
+  { label: "Run Program", href: "/upload" },
 ]
 
 export default function Navbar() {
@@ -40,34 +39,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
-          {/* Mobile hamburger */}
-          {/* <button
-            className={styles.hamburger}
-            onClick={() => setMobileOpen((v) => !v)}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-            <span />
-          </button>*/}
         </div> 
-
-        {/* Mobile menu
-        {mobileOpen && (
-          <div className={styles.mobileMenu}>
-            {NAV_ITEMS.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className={styles.mobileLink}
-                onClick={() => setMobileOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-        )} */}
       </nav>
     </>
   )
