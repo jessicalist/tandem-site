@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-br from-[#1A5276] via-[#154360] to-[#1a4971] text-white pt-[72px] px-10 pb-0"
+      className="relative overflow-hidden bg-gradient-to-br from-[#1A5276] via-[#154360] to-[#1a4971] text-white pt-[72px] pb-0"
       id="hero"
     >
       {/* Decorative DNA helices */}
@@ -28,7 +28,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1120px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-[60px] items-center pb-14">
+      <div className="relative z-10 max-w-[1120px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-[60px] items-center pb-14">
         {/* Main hero content */}
         <div className="animate-fade-up">
           <p className="flex items-center gap-2 font-body text-[12px] font-semibold tracking-[0.1em] uppercase text-sky-blue mb-[18px]">
