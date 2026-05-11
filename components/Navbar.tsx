@@ -3,17 +3,11 @@
 import Link from 'next/link'
 
 const NAV_ITEMS = [
-  { label: 'Research', href: '#research' },
-  { label: 'Publications', href: '#publications' },
-  { label: 'Tools & Data', href: '#tools' },
-  { label: 'News', href: '#news' },
-  { label: 'Contact', href: '#contact' },
-  { label: "Run Program", href: "/upload" },
+  { label: 'Home', href: '/' },
+  { label: 'Run Program', href: '/upload' },
 ]
 
 export default function Navbar() {
-  // const [mobileOpen, setMobileOpen] = useState(false)
-
   return (
     <>
       {/* Institutional banner */}
@@ -28,18 +22,14 @@ export default function Navbar() {
           <Link href="/" className="font-heading font-bold text-[17px] text-white no-underline py-[18px] tracking-[-0.02em] whitespace-nowrap">
             Sokol Lab <span className="text-sky-blue font-normal">// Tandem Repeats</span>
           </Link>
-
-          {/* Desktop links */}
-          <ul className="hidden md:flex list-none gap-0">
+          <ul className="flex list-none gap-0">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="nav-link">
-                  {item.label}
-                </a>
+                <Link href={item.href} className="nav-link">{item.label}</Link>
               </li>
             ))}
           </ul>
-        </div> 
+        </div>
       </nav>
     </>
   )
